@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab10</title>
+    <meta charset="uft-8" />
+    <link href="layout.css" rel="stylesheet">
+    <style type="text/css">
+  
+        .form-group {
+            margin: 10px 0px;
+        }
+
+        .form-control {
+            width: 98%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+
+        .form-group-labe {
+            width: 98%;
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+
+        .form-control:focus {
+            background-color: yellow;
+            box-shadow: 0 0 3px red;
+            border: 1px solid yellow;
+        }
+
+        .form-button {
+            padding: 8px 30px;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+
+        .form-button:hover {
+            color: blue;
+            box-shadow: inset 0 0 20px orangered;
+        }
+
+        .form-button:disabled {
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+
+
+        .form-group {
+            margin: 10px 20px;
+        }
+
+        .form-control {
+            width: 90%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .form-group-label {
+            font-size: 10px;
+            font-weight: bold;
+            font-variant: small-caps;
+            width: 98%
+        }
+
+        .form-control:focus {
+            background-color: yellow;
+            box-shadow: 0 0 3px red;
+            border: 1px solid yellow;
+        }
+
+        .form-button {
+            padding: 8px 30px;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+
+        .form-button:hover {
+            color: blue;
+            box-shadow: inset 0 0 20px orangered;
+        }
+
+        .form-button:disabled {
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="top-right">
+
+                <a href="#">Đăng Nhập</a>
+                <a href="#">Đăng ký</a>
+                <a href="#">Quên mật khẩu</a>
+
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Trang chủ </a></li>
+                <li><a href="lab9.html"> lab 9 </a></li>
+                <li><a href="lab10.html"> lab10</a>
+                    <ul>
+                        <li><a href="#">Mobile</a>
+                        <li><a href="#">Email</a>
+                    </ul>
+                </li>
+                <li><a href="lab11.html"> lab 11 </a></li>
+                <li><a href="lab12.html"> lab12 </a> </li>
+            </ul>
+        </nav>
+
+
+        <aside>
+            <ul class="vmenu">
+                <li><a href="#">Máy tính xách tay</a></li>
+                <li><a href="#">Điện thoại di động</a></li>
+                <li><a href="#">Máy quay phim</a></li>
+                <li><a href="#">Máy chụp ảnh</a></li>
+                <li><a href="#">Tủ lạnh</a></li>
+                <li><a href="#">Đồng hồ đeo tay</a></li>
+                <li><a href="#">Đồng hồ treo tường</a></li>
+                <li><a href="#">Máy giặt</a></li>
+                <li><a href="#">Bàn là</a></li>
+            </ul>
+        </aside>
+        <article>
+            <div class="container">
+                <form>
+                    <h1> From1</h1>
+                    <div class="form-group">
+                        <label class="form-group-labe"> Họ và tên</label>
+                        <input type="text" class="form-control" tabindex="1" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-labe">Quốc tịch</label>
+                        <input type="text" class="form-control" value="Việt Nam" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-labe">Ghi chú</label>
+                        <textarea class="form control" tabindex="2"></textarea>
+                    </div>
+                    <hr />
+                    <button type="submit" class="form-button" tabindex="3">Thêm </button>
+                    <button type="submit" class="form-button" tabindex="4">Sửa</button>
+                    <button type="submit" class="form-button" disabled>Xóa</button>
+                </form>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+
+                <h1>From2</h1>
+                <form>
+                    <div class="form-group">
+                        <label class="form-group-label"> Họ và tên</label>
+                        <input type="text" class="form-control" tabindex="1" />
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Giới tính</legend>
+                            <label class="form-group-label">
+                                <input type="radio" checked tabindex="2" />Nam
+                                <input type="radio" />Nữ</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-label">Ngày sinh</label>
+                        <input type="date" class="form-control" tabindex="3" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-label">Điểm</label>
+                        <input type="number" min="0" max="10" step="0.25" class="form-control" tabindex="4" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-label">Nghề nghiệp</label>
+                        <input list="nghenghiep" class="form-control" tabindex="5">
+                        <datalist id="nghenghiep">
+                            <option value="Bác sĩ"></option>
+                            <option value="Giáo viên"></option>
+                            <option value="Công nhân"></option>
+                            <option value="Kế toán"></option>
+                            <option value="Thủ quỹ"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Sở thích</legend>
+                            <label class="form-group-label">
+                                <input type="checkbox" name="sothich" value="Thể thao" checked tabindex="6" /> Thể thao
+                                <input type="checkbox" name="sothich" value="Du lịch" /> Du lịch
+                                <input type="checkbox" name="sothich" value="Âm nhạc" /> Âm nhạc
+                                <input type="checkbox" name="sothich" value="Ẩm thực" /> Ẩm thực
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-label">Ghi chú</label>
+                        <textarea rows="6" class="form control" tabindex="7"></textarea>
+                    </div>
+                    <hr />
+                    <button type="submit" class="form-button" tabindex="8">Đăng kí</button>
+                    <button type="reset" class="form-button" tabindex="9">Nhập lại</button>
+                </form>
+            </div>
+        </article>
+        <footer> FPT POLYTECHNIC (c) 2021. All RIGHTS RESEERVED
+            <script src="https://uhchat.net/code.php?f=ecf653"></script>
+        </footer>
+    </div>
+</body>
+
+</html>

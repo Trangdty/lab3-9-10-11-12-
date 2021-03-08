@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab12</title>
+    <meta charset="uft-8" />
+    <link href="layout.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .image {
+            width: 20%;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .noidung {
+            width: 75%;
+            float: right;
+            padding-left: 10px;
+            bottom: 20px;
+        }
+
+        .ban-tin {
+            clear: both;
+        }
+
+
+        body {
+            padding: 0px;
+            margin: 0 auto;
+            width: 1000px;
+
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .container>header {
+            height: 0px;
+            background-image: url(image/header.jpg );
+            background-size: 100% 100%;
+            padding-bottom: 25%;
+            background-repeat: repeat;
+        }
+
+        .container>nav {
+            line-height: 40px;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        .container>nav>a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        .container nav a:hover {
+            color: yellow;
+        }
+
+        .container>article {
+            min-height: 200px;
+            width: 70%;
+            background-color: white;
+            float: left;
+        }
+
+        .container>aside {
+            background-color: lightgrey;
+            min-height: 200px;
+            width: 30%;
+            float: right;
+        }
+
+        .container>footer {
+            border-top: 5px double orangered;
+            line-height: 50px;
+            background-color: plum;
+            text-align: center;
+            font-variant: small-caps;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="top-right">
+
+                <a href="#">Đăng Nhập</a>
+                <a href="#">Đăng ký</a>
+                <a href="#">Quên mật khẩu</a>
+
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Trang chủ </a></li>
+                <li><a href="lab9.html"> lab 9 </a></li>
+                <li><a href="lab10.html"> Lab10</a>
+                    <ul>
+                        <li><a href="#">Mobile</a>
+                        <li><a href="#">Email</a>
+                    </ul>
+                </li>
+                <li><a href="lab11.html"> lab11</a></li>
+                <li><a href="lab12.html"> lab12 </a> </li>
+            </ul>
+        </nav>
+
+
+        <aside>
+            <ul class="vmenu">
+                <li><a href="#">Máy tính xách tay</a></li>
+                <li><a href="#">Điện thoại di động</a></li>
+                <li><a href="#">Máy quay phim</a></li>
+                <li><a href="#">Máy chụp ảnh</a></li>
+                <li><a href="#">Tủ lạnh</a></li>
+                <li><a href="#">Đồng hồ đeo tay</a></li>
+                <li><a href="#">Đồng hồ treo tường</a></li>
+                <li><a href="#">Máy giặt</a></li>
+                <li><a href="#">Bàn là</a></li>
+            </ul>
+        </aside>
+        <div class="container">
+            <article>
+            <h2>Sinh viên </h2>
+            <hr />
+            <div class="ban-tin">
+                <img class="image" src="image/ảnh 1.jpg" alt="sinh vien" width="200px" height="100px">
+                <div class="noidung">
+                    <strong>Sở tay sinh viên</strong><br />
+                    Sổ tay sinh viên cung cấp những thông in chi tiết về các quy định cũng như môi trường học tập giúp
+                    sinh viên
+                    có được sự thuận lợi trong quá trình học tập.
+                </div>
+            </div>
+            <div class="ban-tin">
+                <img class="image" src="image/download.jpg" alt="sinh vien" width="200px" height="100px">
+                <div class="noidung">
+                    <strong>Văn bản hợp nhất số 02/VBNH-BGDVĐT quy định đào tạo quy trình liên thông cao dảng đại
+                        học</strong><br />
+                    Thông tư số 55/2012TT-BGDDT ngày 25/12/2012 của bộ trưởng BGD & ĐTquy định đào tạo liên thông cao
+                    đẳng và đại học
+                    có hiệu lục ngày 7/01/2013.
+                </div>
+            </div>
+            <div class="ban-tin">
+                <img class="image" src="image/ảnh 3.jpg" alt="sinh vien" width="200px" height="100px">
+                <div class="noidung">
+                    <strong>Tài nguyên cần thiết cho sinh viên</strong><br />
+                    Tài nguyên học tập của sinh viên bao gồm các bài giảng, bài thục hành, kiểm tra, đánh giá cũng như
+                    các tài nguyên
+                    khác phục vụ cho việc học tập cho sinh viên.
+                </div>
+                <br />
+            </div>
+            <audio controls="i" src="image/Bản Nhạc không lời hay.mp3"></audio>
+            </article>
+        </div>
+
+        <div class="container">
+
+            <article>
+                <iframe name="video" width="690" height="460" src="https://www.youtube.com/embed/5s_4Oyi8ffM"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+            <aside>
+                <a href="https://www.youtube.com/watch?v=USrxM5J7Wws"><img src="image/chiến chiến.jpg" width="300px"
+                        height="150px"></a><br />
+                <a href="https://www.youtube.com/watch?v=Hqwv6PVhRf4"><img src="image/VN Bác.jpg" width="300px"
+                        height="150px"></a><br />
+                <a href="#"><img src="image/trần tình lệnh..jpg" width="300x" height="150px"></a>
+            </aside>
+
+        </div>
+
+
+        <footer> FPT POLYTECHNIC (c) 2021. All RIGHTS RESEERVED
+            <script src="https://uhchat.net/code.php?f=ecf653"></script>
+        </footer>
+    </div>
+</body>
+
+</html>
